@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8">
+<title>About Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="images/site.png" type="image/x-icon" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+<script src="js/jquery.js"></script>
+<script src="js/js_file.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+<div class="header">
+  <div class="logo_container"> <a href="index.html"><img src="images/logo1.png" alt="logo" class="logo" /></a> </div>
+  
+  <!-- Navigation -->
+  <div class="navigation_container">
+    <nav>
+      <ul class="active">
+        <li class="current-item">
+        	<a href="index.html" class="nav_color"> Home </a>&nbsp;<span class="glyphicon glyphicon-home"> </span></li>
+        <li><a href="about_us.html">About</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="privacy_policy.html">Privacy Policy</a></li>
+        <li><a href="refund_policy.html">Refund Policy</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="toggle-nav" >&#9776; </div></nav>
+  </div>
+</div>
+<!-- header Container End Here-->
+
+<div class="privacy_heading">
+  <h1>About Us</h1>
+</div>
+<div class="main_img-wrapper">
+  <div class="main_inner">
+    <div class="inner_center">
+    
+    <div class="carousel">
+    <script src="js/jssor.slider-22.2.16.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $AutoPlaySteps: 3,
+              $SlideDuration: 160,
+              $SlideWidth: 300,
+				 $SlideHeight: 300,
+              $SlideSpacing: 2,
+              $Cols: 3,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$,
+                $Steps: 3
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$,
+                $SpacingX: 1,
+                $SpacingY: 1
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1200);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*responsive code end*/
+        };
+    </script>
+    <style>
+        /* jssor slider bullet navigator skin 03 css */
+        /*
+        .jssorb03 div           (normal)
+        .jssorb03 div:hover     (normal mouseover)
+        .jssorb03 .av           (active)
+        .jssorb03 .av:hover     (active mouseover)
+        .jssorb03 .dn           (mousedown)
+        */
+        .jssorb03 {
+            position: absolute;
+        }
+        .jssorb03 div, .jssorb03 div:hover, .jssorb03 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 40px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+			margin: 10px;
+            font-size: 12px;
+            background: url('../carousel/img/b03.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+			background-color: red;
+        }
+        .jssorb03 div { background-position: -5px -4px; }
+        .jssorb03 div:hover, .jssorb03 .av:hover { background-position: -35px -4px; }
+        .jssorb03 .av { background-position: -65px -4px; }
+        .jssorb03 .dn, .jssorb03 .dn:hover { background-position: -95px -4px; }
+        .jssora03l, .jssora03r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 55px;
+            height: 55px;
+			margin-top: 50px;
+            cursor: pointer;
+            background: url('../carousel/img/a03.png') no-repeat;
+            overflow: hidden; background-color:dimgray;
+        }
+        .jssora03l { background-position: -3px -33px; }
+        .jssora03r { background-position: -63px -33px; }
+        .jssora03l:hover { background-position: -123px -33px; background-color: red; }
+        .jssora03r:hover { background-position: -183px -33px; background-color: red; }
+        .jssora03l.jssora03ldn { background-position: -243px -33px; }
+        .jssora03r.jssora03rdn { background-position: -303px -33px; }
+        .jssora03l.jssora03lds { background-position: -3px -33px; opacity: .3; pointer-events: none; }
+        .jssora03r.jssora03rds { background-position: -63px -33px; opacity: .3; pointer-events: none; }
+    </style>
+     <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1200px;height:300px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:5px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:100px;left:0px;width:100%;height:400px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="images/abt_img/1.png" />
+            </div>
+            <div>
+                <img data-u="image" src="images/abt_img/2.png" />
+            </div>
+            <div>
+                <img data-u="image" src="images/abt_img/3.png" />
+            </div>
+            <div>
+             <img data-u="image" src="images/abt_img/4.png" />
+            </div>
+            <div>
+                <img data-u="image" src="images/abt_img/5.png" />
+            </div>
+            <div>
+                <img data-u="image" src="images/abt_img/6.png" />
+            </div>
+            <div>
+                <img data-u="image" src="images/abt_img/7.png" />
+            </div>
+            <div>
+                <img data-u="image" src="images/abt_img/8.png" />
+            </div>
+            <div>
+                <img data-u="image" src="images/abt_img/9.png" />
+            </div>
+            <div>
+                <img data-u="image" src="images/abt_img/10.png" />
+            </div>
+            <div>
+                <img data-u="image" src="images/abt_img/5.png" />
+            </div>
+            <div>
+                <img data-u="image" src="images/abt_img/8.png" />
+            </div>
+            <div>
+                <img data-u="image" src="images/abt_img/7.png" />
+            </div>          
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb03" style="bottom:10px;right:10px; line-height:30px; ">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:21px;height:21px; line-height: 21px;">
+                <div data-u="numbertemplate"></div>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora03l" style="top:0px;left:8px;width:55px;height:55px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora03r" style="top:0px;right:8px;width:55px;height:55px;" data-autocenter="2"></span>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();</script>
+    </div>
+    
+    
+    <div class="inner_center">
+      <h1 class="terms_clr"> Welcome To Azr khan assets</h1>
+      <p>Azr khan assets is a young, dynamic gathering of IT Professionals and online web publicizing experts. We have some skill in site plan and configuration, Web Development, eShops, Software improvement, Mobile Applications, visual portrayal and IT bolster. We can do all kind of an IT anticipates paying little heed to it is a fundamental Static website or a compel full web or desktop application. We are satisfied to having dominance in Web Design and change, Mobile application, Desktop applications and web Marketing. We focus on a monetarily adroit response for associations and individuals searching for the most perfectly awesome in master web arrange, Web Development, Software headway, SEO/SEM Domain and encouraging, Inbound Call focuses and customer organization. The overall business focus that is the web is at present submerged with associations all pursuing the thought of potential customers and it is more basic than some other time in late memory to have a webpage that is professionally laid out and apparently striking. Azr khan assets can help your association open up the upsides of an online proximity by ensuring that your site meets each yearning of its visitors.</p>
+    </div>
+    <div class="inner_center">
+      <div class="divide_container">
+        <h2><img src="images/mison.png"> Our Mission</h2>
+        <p>To achieve most outrageous possible bits of the pie in the field of IT, Call focuses and Customer organization by making a beneficial contribution about Azr Khan Resources from our Customers. We will probably turn into a dynamic and prime member in field of IT.</p>
+      </div>
+      <div class="divide_container">
+        <h2><img src="images/vission.png"> Solution Finder</h2>
+        <ul class="gray">
+          <li>Seek on what's essential to you </li>
+          <li>Get arrangement suggestions </li>
+          <li>Figure out how our items can offer assistance </li>
+          <p>Start finding the benefit in contact course of action by using our Solution Finder. Just pick the class that is most basic or best depicts your contact center, and you'll get spot-on thing recommendations.</p>
+        </ul>
+      </div>
+      <div class="divide_container"  id="ourmission">
+        <h2> <img src="images/glasses.png"/> Our Vision</h2>
+        <p>Azr khan assets try to convey, make and advance incredible items and administrations, we endeavor to develop our business with same genuineness and honesty. Azr khan assets have a mission to wind up distinctly the world's most regarded administration mark and to do this we have made a few strides with the goal that we can give outstanding administrations to our clients.</p>
+      </div>
+      <div class="divide_container">
+        <h2><img src="images/hnd1.png"> Our Commitment</h2>
+        <p>We take pride in our on time transport and ability to meet expedient turn requests while outperforming customer quality solicitations. Shoppers fulfillment continues being of most outrageous hugeness to Azr khan assets, as do Consistent quality, Constant advancement, Technology overhaul, Process change and Customer introduction. We have developed our inside capacity and altering objectives at all levels with a specific end goal to recognize helpful vitality in operations. It is our group situated philosophy, innovative data, and emphasis on calm courses of action that has allowed us to develop a critical and arranged client list.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="footer_inner">
+    <div class="footer_divide1">
+      <h4 class="ftr-red"><b>CONTACT INFO</b></h4>
+      <h5><strong>Office # 1</strong> No : 98 Hala Tasek Timur 30 Taman Cahaya Bercham  31400 IPOH Perek<br>
+        <br>
+        <strong>Office # 2</strong> No : 50 Lengkok Bercham Timur 4
+        Tmn Pakatan 31400 IPOH Perek </h5>
+      <br>
+      <h5>E-mail : support@azrkhanresources.com</h5>
+    </div>
+    <div class="footer_divide2">
+      <h4> <b>STAY CONNECTED <br>
+        WITH US</b></h4>
+     <div class="social-popout" title="Twitter"> 
+     <a href="https://twitter.com/AzRresources" target="_blank">
+	<img src="img/social/twit.png"/>
+		 </a>
+     </div>
+      <div class="social-popout" title="Facebook">
+      <a href="https://www.facebook.com/azrkhanresource/">
+      <img src="img/social/faceb.png" />
+      </a>
+      </div>
+      <br>
+      <div class="social-popout" title="Google" id="google"><img src="img/social/gmails.png" /></div>
+    </div>
+    <div class="footer_divide3">
+      <ul>
+        <h4><b>Short Links</b></h4>
+        <li><a href="index.html"><span class="glyphicon glyphicon-home"> </span>&nbsp;Home </a></li>
+        <li><a href="service.html">Services </a></li>
+        <li><a href="privacy_policy.html">Privacy policy</a></li>
+        <li><a href="refund_policy.html">Refund Policy</a></li>
+        <li><a href="about_us.html">About Us </a></li>
+      </ul>
+    </div>
+    <div class="licenced"> <img src="images/logo2.png" alt="logo"/>
+      <p>&reg; 2017 Copyright All Right Reserved</p>
+    </div>
+  </div>
+</div>
+<!-- footer  End Here-->
+
+</body>
+</html>

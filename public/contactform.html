@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Payment Method</title>
+<link rel="shortcut icon" href="images/logo1.png" type="image/x-icon"> 
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+<script src="js/jquery.js"></script>
+<script src="js/js_file.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/set2.css" />
+</head>
+<body>
+<div class="header">
+  <div class="logo_container"> <a href="index.html"><img src="images/logo1.png" alt="logo" class="logo" /></a> </div>
+  
+  <!-- Navigation -->
+  <div class="navigation_container">
+    <nav>
+      <ul class="active">
+        <li class="current-item"> <a href="index.html" class="nav_color"> Home </a>&nbsp;<span class="glyphicon glyphicon-home"></span></li>
+        <li><a href="about_us.html">About</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="privacy_policy.html">Privacy Policy</a></li>
+        <li><a href="refund_policy.html">Refund Policy</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="toggle-nav" >&#9776; </div>
+    </nav>
+  </div>
+</div>
+<!-- header Container End Here-->
+<div class="privacy_heading">
+  <h1>Payment Method</h1>
+</div>
+<div class="main_pcontiner">
+<form method="POST" id = "paymentDataForm" action="https://securepay.e-ghl.com/IPG/Payment.aspx">
+<input type="hidden" name="TransactionType" value = "SALE"/>
+<input type="hidden" name="PymtMethod" value = "ANY"/>
+<input type="hidden" name="ServiceID" id = "ServiceID" value = "AKR"/>
+<input type="hidden" name="PaymentID" id = "PaymentID" value = "ABCD126"/>
+<input type="hidden" name="OrderNumber" value = "AZR_KHAN_RESOURCES 1"/>
+<input type="hidden" name="PaymentDesc" value = "Payment to AZR KHAN RESOURCES for providing their services"/>
+<input type="hidden" name="MerchantName" value = "Azr Khan Resources"/>
+<input type="hidden" name="MerchantReturnURL" id = "MerchantReturnURL" value = "https://azrkhanresources.com/payment_api_resp.php"/>
+<input type="hidden" name="MerchantCallbackURL" id = "MerchantCallbackURL" value = "https://azrkhanresources.com/payment_api_resp.php"/>
+<input type="hidden" name="Amount" id = "Amount" value = "100.00"/>
+<input type="hidden" name="CurrencyCode" id = "CurrencyCode" value = "USD"/>
+<input type="hidden" name="CustIP" id = "CustIP" value = "110.93.222.51"/>
+<input type="hidden" name="CustName"  id = "CustName" value = ""/>
+<input type="hidden" name="CustEmail" id = "CustEmail" value = ""/>
+<input type="hidden" name="CustPhone" id = "CustPhone" value = ""/>
+<input type="hidden" name="HashValue" id = "HashValue" value = ""/>
+<input type="hidden" name="MerchantTermsURL" value = "https://azrkhanresources.com/privacy_policy.php"/>
+<input type="hidden" name="LanguageCode" value = "en"/>
+<input type="hidden" name="PageTimeout" id = "PageTimeout" value = "780"/>
+<div class="main_pinner">
+<div class="left_cont">
+<div class="icons_cont">
+  <h3 class="terms_clr"><img src="images/pymnt2.png" />Payment Details</h3>
+</div>
+<section class="content bgcolor-1">
+<span class="input input--nao">
+<input class="input__field input__field--nao" type="text" id="input-1" />
+<label class="input__label input__label--nao" for="input-1"> <span class="input__label-content input__label-content--nao">Name</span> </label>
+<svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+  <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+</svg>
+</span> <span class="input input--nao">
+<input class="input__field input__field--nao" type="date" id="input-3">
+<label class="input__label input__label--nao" for="input-3"> <span class="input__label-content input__label-content--nao"> </span> </label>
+<svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+  <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+</svg>
+</span> <span class="input input--nao">
+<input class="input__field input__field--nao" type="text" id="input-2" />
+<label class="input__label input__label--nao" for="input-2"> <span class="input__label-content input__label-content--nao"> Payment</span> </label>
+<svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+  <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+</svg>
+</span> <span class="input input--nao">
+<input class="input__field input__field--nao" type="email" id="input-3" />
+<label class="input__label input__label--nao" for="input-3"> <span class="input__label-content input__label-content--nao">Email Address</span> </label>
+<svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+  <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+</svg>
+</span> <span class="input input--nao">
+<input class="input__field input__field--nao" type="n" id="input-3" />
+<label class="input__label input__label--nao" for="input-3"> <span class="input__label-content input__label-content--nao"> Phone no# </span> </label>
+<svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+  <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+</svg>
+</span> <span class="input input--nao">
+<select class="input__field input__field--nao" type="n" id="input-3" >
+  <label class="input__label input__label--nao" for="input-3">
+  <span class="input__label-content input__label-content--nao">
+  <option selected disabled value = "">Select Currency</option>
+  <option>USD</option>
+  <option>MYR</option>
+  </span>
+  </label>
+  <svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+  </svg>
+</select>
+</span>
+</div>
+<div class="right_cont">
+  <div class="icons_cont">
+    <h3 class="terms_clr"><img src="images/adres2.png"> Adress Details</h3>
+  </div>
+  
+  <!--          <input type="text" placeholder="Adress" id="paymnt_input" name="u_adress">
+                    <input type="text" placeholder="Postal Code" id="paymnt_input" name="u_pcode">
+                    <input type="text" placeholder="City" id="paymnt_input" name="u_city">
+                    <input type="text" placeholder="Country" id="paymnt_input" name="u_country">  -->
+  
+  <section class="content bgcolor-1"> <span class="input input--nao">
+    <input class="input__field input__field--nao" type="text" id="input-1" />
+    <label class="input__label input__label--nao" for="input-1"> <span class="input__label-content input__label-content--nao">Address</span> </label>
+    <svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+      <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+    </svg>
+    </span> <span class="input input--nao">
+    <input class="input__field input__field--nao" type="text" id="input-2" />
+    <label class="input__label input__label--nao" for="input-2"> <span class="input__label-content input__label-content--nao">Postal Code </span> </label>
+    <svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+      <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+    </svg>
+    </span> <span class="input input--nao">
+    <input class="input__field input__field--nao" type="text" id="input-3" />
+    <label class="input__label input__label--nao" for="input-3"> <span class="input__label-content input__label-content--nao"> City</span> </label>
+    <svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+      <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+    </svg>
+    </span> <span class="input input--nao">
+    <input class="input__field input__field--nao" type="text" id="input-3" />
+    <label class="input__label input__label--nao" for="input-3"> <span class="input__label-content input__label-content--nao"> Country </span> </label>
+    <svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+      <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+    </svg>
+    </span>
+    <div class="chek_btn">
+      <input type="checkbox" class="check_btn">
+      <span>l agree with</span> <a href="terms.html" target="_blank">Terms &nbsp; &amp; &nbsp; Policies </a> </div>
+  </section>
+</div>
+<a href="#" class="pay_btn_bfr">
+<input type="button" id = "btn_submitPaymentMethodForm" class="cnfrn_btn" name="btn" disabled="disabled" value="CONFIRM" />
+</a> 
+<script src="js/classie.js"></script> 
+<script>
+			(function() {
+				// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+				if (!String.prototype.trim) {
+					(function() {
+						// Make sure we trim BOM and NBSP
+						var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+						String.prototype.trim = function() {
+							return this.replace(rtrim, '');
+						};
+					})();
+				}
+
+				[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+					// in case the input is already filled..
+					if( inputEl.value.trim() !== '' ) {
+						classie.add( inputEl.parentNode, 'input--filled' );
+					}
+
+					// events:
+					inputEl.addEventListener( 'focus', onInputFocus );
+					inputEl.addEventListener( 'blur', onInputBlur );
+				} );
+
+				function onInputFocus( ev ) {
+					classie.add( ev.target.parentNode, 'input--filled' );
+				}
+
+				function onInputBlur( ev ) {
+					if( ev.target.value.trim() === '' ) {
+						classie.remove( ev.target.parentNode, 'input--filled' );
+					}
+				}
+			})();
+		</script>
+</div>
+</form>
+</div>
+<div class="footer">
+  <div class="footer_inner">
+    <div class="footer_divide1">
+      <h4><b>CONTACT INFO</b></h4>
+      <h5><strong>Office # 1</strong> No : 98 Hala Tasek Timur 30 Taman Cahaya Bercham  31400 IPOH Perek<br>
+        <br>
+        <strong>Office # 2</strong> No : 50 Lengkok Bercham Timur 4
+        Tmn Pakatan 31400 IPOH Perek </h5>
+      <br>
+      <h5>E-mail : support@azrkhanresources@gmail.com</h5>
+    </div>
+    <div class="footer_divide2">
+      <h4> <b>STAY CONNECTED <br>
+        WITH US</b></h4>
+      <div class="social-popout" title="Twitter"> <a href="https://twitter.com/AzRresources" target="_blank"> <img src="img/social/twit.png"/> </a> </div>
+      <div class="social-popout" title="Facebook"> <a href="https://www.facebook.com/azrkhanresource/"> <img src="img/social/faceb.png" /> </a> </div>
+      <br>
+      <div class="social-popout" title="Google" id="google"><img src="img/social/gmails.png" /></div>
+    </div>
+    <div class="footer_divide3">
+      <ul>
+        <h4><b>Short Links</b></h4>
+        <li><a href="index.html"><span class="glyphicon glyphicon-home"> </span>&nbsp;Home </a></li>
+        <li><a href="service.html">Services </a></li>
+        <li><a href="privacy_policy.html">Privacy policy</a></li>
+        <li><a href="refund_policy.html">Refund Policy</a></li>
+        <li><a href="about_us.html">About Us </a></li>
+      </ul>
+    </div>
+    <div class="licenced"> <img src="images/logo2.png" alt="logo"/>
+      <p>&reg; 2017 Copyright All Right Reserved</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
