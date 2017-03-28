@@ -344,14 +344,14 @@ nav ul  :hover {
 	font-size: 12px;
 	color: #ccc;
 }
-#emai-css {
+/*#emai-css {
 	width: 65%;
 	padding: 7PX;
 	color: #E85D0B;
 	background-color: #191919;
 	border: none;
 	outline: none;
-}
+}*/
 .footer_divide2 {
 	width: 20%;
 	display: inline-block;
@@ -391,10 +391,6 @@ nav ul  :hover {
 	margin-left: 49px;
 }
 /******************** social icon Ends *****************/
-
-
-/*.footer_divide2 img{ margin-right:5px;}
-#margin-icon{ margin-top:-8px;}*/
 .footer_divide3 {
 	width: 20%;
 	display: inline-block;
@@ -551,7 +547,7 @@ nav ul  :hover {
 	width: 60%;
 	float: left;
 	text-align: left;
-	margin-left: 250px; color: white; margin-top: 50px;
+	margin-left: 250px; color: white; margin-top: 75px;
 }
 .cont_inner3 {
 	width: 380px;
@@ -722,12 +718,11 @@ nav ul  :hover {
 .banner_img {
 	width: 100%;
 	float: left;
-	margin-top: 25px;
 }
 .banner_details {
 	width: 100%;
 	float: left;
-	 margin-top: 2%; margin-left: -0px;
+	 margin-top: 2%;
 }
 #brdr_none_banner {
 	border: none;
@@ -745,7 +740,7 @@ nav ul  :hover {
 	margin-bottom: 35px;
 }
 .main_pinner {
-	width: 1200px;
+	width: 100%;
 	display: inline-block;
 	margin-bottom: 50px;
 	margin-top: 30px;
@@ -942,14 +937,6 @@ background: linear-gradient(to left, #44A08D , #093637); 36%,rgba(40,52,59,1) 70
 	font-size: 12px;
 	color: #ccc;
 }
-/*#emai-css {
-	width: 65%;
-	padding: 7PX;
-	color: #E85D0B;
-	background-color: #191919;
-	border: none;
-	outline: none;
-}*/
 	
 	.footer_divide2 {
 	width: 200px;
@@ -1033,16 +1020,12 @@ background: linear-gradient(to left, #44A08D , #093637); 36%,rgba(40,52,59,1) 70
 	margin-bottom: 30px;
 	padding: 5px 20px 5px 20px;
 }
-.cont_inner2 {
-	width: 100%;
-	float: left;
-	border: 0px solid black; background:red;
-}
+
 .cont_inner2_heading {
 	width: 100%;
 	float: left;
 	text-align: left;
-	border: 0px solid black;
+	border: 0px solid black;margin-left: 10px;
 }
 .cont_inner3 {
 	width: 38%;
@@ -1161,12 +1144,10 @@ nav ul li {
 }
 .banner_img {
 	width: 100%;
-	float: left;
+	float: left; background-color: yellow;
 	margin-left: 10px;
 }
-.banner_img img {
-	width: 100%;
-}
+.banner_img img {}
 .banner_details {
 	width: 100%;
 	float: left;
@@ -1213,13 +1194,12 @@ nav ul li {
 	border: 0px solid olive;
 	display: block;
 }
-/*.cont_inner2 {
-	width: 60%;
+	.cont_inner2_heading {
+	width: 100%;
 	float: left;
-	border: 0px solid black;
-	background: red; 
-
-	}*/
+	text-align: left;
+	border: 0px solid black;margin-left: 10px;
+}
 .cont_inner3 {
 	width: 38%;
 	float: right;
@@ -1227,13 +1207,13 @@ nav ul li {
 .cont_inner3 h3 {
 	text-align: left;
 }
-.cont_inner1_details {
+/*.cont_inner1_details {
 	width: 100%;
 	display: block;
 	float: left;
 	margin-right: 30px;
 	border: 0px solid black;
-}
+}*/
 /*about_us*/
 .main_inner {
 	width: 100%;
@@ -1325,6 +1305,13 @@ nav ul li {
 	padding-top: 190px;
 	position: absolute;
 }
+	.cont_inner2_heading {
+	width: 100%;
+	float: left;
+	text-align: left;
+	border: 0px solid black;margin-left: 5px;
+}
+	
 }
 
 @media only screen and (max-width: 800px) {
@@ -1334,9 +1321,15 @@ body {
 .cont_inner3 {
 	margin-top: 50px;
 }
+	.cont_inner2_heading {
+	width: 100%;
+	float: left;
+	text-align: left;
+	border: 0px solid black;margin-left: 100px;
+}
 .main_banner {
 	margin-top: 30px;
-}
+}	
 .navigation_container {
 	width: 100%;
 	float: left;
@@ -1377,7 +1370,7 @@ nav ul :hover {
 	height: 40px;
 	float: right;
 	margin-right: 10px;
-	margin-top: 4px;
+	margin-top: 4px;background: red;
 	text-align: center;
 	line-height: 40px;
 	font-size: 18px;
@@ -1392,6 +1385,11 @@ nav ul :hover {
 .toggle-nav {
 	text-decoration: none;
 }
+	.banner_img img{
+		width:800px;
+		margin-left: -5px;
+		
+	}
 .our_moto-inner {
 	width: 100%;
 	margin: 0 auto;
@@ -1521,14 +1519,14 @@ nav ul :hover {
 	font-size: 12px;
 	color: #ccc;
 }
-#emai-css {
+/*#emai-css {
 	width: 65%;
 	padding: 7PX;
 	color: red;
 	background-color: #191919;
 	border: none;
 	outline: none;
-}
+}*/
 .footer_divide2 {
 	width: 200px;
 	display: inline-block; margin-left: 20%;
@@ -1567,10 +1565,6 @@ nav ul :hover {
 	margin-left: 49px;
 }
 /******************** social icon Ends *****************/
-
-
-/*.footer_divide2 img{ margin-right:5px;}
-#margin-icon{ margin-top:-8px;}*/
 .footer_divide3 {
 	width: 200px;
 	display: inline-block;
@@ -1615,16 +1609,18 @@ nav ul :hover {
 	float: right;
 }
 /*contact*/
-.cont_inner2 {
+/*.cont_inner2 {
 	width: 100%;
 	float: left;
 	border: 0px solid black;
-}
+}*/
 .cont_inner2_heading {
 	width: 100%;
 	float: left;
 	text-align: left;
 	border: 0px solid black;
+	margin-left: 200px;
+	margin-top: 75px;
 }
 .cont_inner3 {
 	width: 100%;
@@ -1652,6 +1648,12 @@ nav ul :hover {
 @media only screen and (max-width: 680px) {
 body {
 	padding: 0px;
+}
+	.cont_inner2_heading {
+	width: 100%;
+	float: left;
+	text-align: left;
+	border: 0px solid black;margin-left: 10px;
 }
 .cont_inner3 {
 	margin-top: 50px;
@@ -1784,13 +1786,13 @@ body {
 	font-size: 12px;
 	color: #ccc;
 }
-#emai-css {
+/*#emai-css {
 	width: 65%;
 	padding: 7px;
 	background-color: #191919;
 	border: none;
 	outline: none;
-}
+}*/
 .footer_divide2 {
 	width: 200px;
 	display: inline-block;
@@ -1943,14 +1945,14 @@ body {
 	float: left;
 	width: 120px;
 }
-#emai-css {
+/*#emai-css {
 	width: 45%;
 	padding: 7PX;
 	color: red;
 	background-color: #191919;
 	border: 0px solid black;
 	outline: none;
-}
+}*/
 /*contact*/
 .cont_inner1_heading {
 	width: 55%;
@@ -2044,5 +2046,6 @@ background: linear-gradient(to left, #44A08D , #093637);
 	padding: 2px;
 	margin-left: 22%;
 }
+	
 }
 
