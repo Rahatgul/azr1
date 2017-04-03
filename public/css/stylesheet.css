@@ -4,7 +4,7 @@
 	src: url("fonts/SEGOEUI.TTF");
 }
 body {
-	margin: 0; padding: 0;background: linear-gradient(to left, #44A08D , #093637);
+	margin: 0; padding: 0;background: linear-gradient(to left, #abbaab , #ffffff);
 	font-family: "Segoe UI", Arial, sans-serif; 
 }
 h1, h2, h3, h4, h5, h6 {
@@ -31,13 +31,11 @@ a {
 	position: fixed;
 	height: 90px;
 	z-index: 100000000;
-	background: linear-gradient(to left, #44A08D , #093637);
+	background-color: darkgray;
 	border-bottom: 2px solid black;
 }
-.header:hover {
-}
 .main_banner {
-	margin-top: 3%;
+	margin-top: 7.5%;
 	width: 100%; 
 }
 .logo_container {
@@ -65,31 +63,28 @@ nav ul {
 	padding: 0;
 	float: right;
 	height: 50px;
-	margin-top: 8px;
+	margin-top: 20px;
 }
 nav ul li {
-	margin: 4px;
-	height: 40px;
-	line-height: 35px;
+	height: 30px;
+	line-height: 20px;
 	list-style: none;
 	display: inline-block;
-	background-color: red;
 	border-radius: 10% 10%;
 	padding: 7px 15px;
 	float: left;
 	font-weight: bold;
 }
 nav ul a {
-	color: white; 
+	color: white; font-size: 16px;
+}
+nav ul a li:visited{
+	color: blue;	
 }
 nav ul  :hover {
 	color:white;
 	text-decoration: none;
-	background: linear-gradient(to left, #44A08D , #093637); 30%,rgba(40,52,59,1) 70%);
-	
-}
-.nav_color {
-	color:#191919;
+	background:red;
 }
 .main_banner {
 	width: 100%;
@@ -138,16 +133,6 @@ nav ul  :hover {
 .img_box img {
 	width: 100%;
 }
-/*.project_hover
-{
-	width: 100%;
-	float: left;
-	height: 225px;
-	
-	opacity: 0.8;
-	position: absolute;
-	display: none;
-}*/
 .our_services {
 	width: 100%;
 	float: left;
@@ -238,7 +223,7 @@ nav ul  :hover {
 	display: inline-block;
 }
 .second_cont-devide1 {
-	width: 500x;
+	width: 500px;
 	float: left;
 	padding: 20px;
 	text-align: left;
@@ -336,13 +321,12 @@ nav ul  :hover {
 	font-size: 12px;
 	color: #ccc;
 }
-.footer_divide2 {
+/* .footer_divide2 {
 	width: 20%;
 	display: inline-block;
 	margin-bottom: 10px;
 }
-/******************** social icon starts *****************/
-
+/******************** social icon starts *****************
 .social-popout {
 	height: 48px;
 	width: 48px;
@@ -397,7 +381,7 @@ nav ul  :hover {
 .licenced {
 	width: 100%;
 	float: left;border: thick 2px #9C2729 ;
-	background: linear-gradient(to left, #44A08D , #093637); 36%,rgba(40,52,59,1) 70%);
+	background: linear-gradient(to left, #abbaab , #ffffff);
 	padding: 4px;
 }
 .licenced p {
@@ -463,7 +447,7 @@ nav ul  :hover {
 .lock_content P {
 	text-align: left; color: aliceblue;
 }
-.gray{color:white;
+.gray{color:black;
 }
 .persnal_info-conrainer {
 	width: 100%;
@@ -487,14 +471,14 @@ nav ul  :hover {
 /*refund page start*/
 
 /*---------- contact us --------------- */
-.comtact_main {
+/* .comtact_main {
 	width: 100%;
 	float: left;
 	text-align: center;
 	margin-bottom: 5%;
 	margin-top: 3%;
 	border-top: 4px solid #191919;
-}
+}*/
 .contact_inner {
 	width: 1000px;
 	display: inline-block;
@@ -503,35 +487,35 @@ nav ul  :hover {
 	width: 100%;;
 	float: left;
 }
-.cont_inner1_img {
+/*.cont_inner1_img {
 	width: auto;
 	float: right;
 	margin-top: 20px;
-}
-.cont_inner1_heading span h1 {
+}*/
+/* .cont_inner1_heading span h1 {
 	text-align: right;
 	margin-top: -45px;
-}
-.cont_inner1_details {
+}*/
+/* .cont_inner1_details {
 	width: auto;
 	display: block;
 	float: left;
 	margin-right: 50px; color: darkgray; 
 		
-}
-.cont_inner1_details p {
+}*/
+/* .cont_inner1_details p {
 	text-align: left;
-}
-.cont_inner2 {
+}*/
+/* .cont_inner2 {
 	width: 100%;
 	float: left;
 	margin-bottom: 10px;
-}
+}*/
 .cont_inner2_heading {
 	width: 60%;
 	float: left;
 	text-align: left;
-	margin-left: 250px; color: white; margin-top: 75px;
+	margin-left: 250px; margin-top: 70px;
 }
 .cont_inner3 {
 	width: 380px;
@@ -544,12 +528,11 @@ nav ul  :hover {
 	width: 98%;
 	float: left;
 	margin-bottom: 20px;
-	margin-left:px;
 	border-bottom: 4px ridge white;
 }
 .cont_hading_underline img {
 	vertical-align: -3px;
-	color:white;
+	color:white; margin-top: 8px;
 }
 /* -----------  about us  ----------*/
 .main_img-wrapper {
@@ -800,7 +783,7 @@ nav ul li {
 	line-height: 35px;
 	list-style: none;
 	display: inline-block;
-	background:red;
+	background:darkgray;
 	border-radius: 10% 10%;
 	padding: 7px 15px;
 	float: left;
@@ -812,11 +795,8 @@ nav ul li a {
 nav ul :hover {
 	color:white;
 	text-decoration: none;
-background: linear-gradient(to left, #44A08D , #093637); 36%,rgba(40,52,59,1) 70%);
+background: red
 	
-}
-	.nav_color {
-	color:#191919;
 }
 .main_banner {
 	width: 100%;
@@ -903,12 +883,12 @@ background: linear-gradient(to left, #44A08D , #093637); 36%,rgba(40,52,59,1) 70
 	color: #ccc;
 }
 	
-	.footer_divide2 {
+	/*.footer_divide2 {
 	width: 200px;
 	display: inline-block;
 	margin-bottom: 10px; margin-left: 7%;
 }
-/******************** social icon starts *****************/
+/******************** social icon starts *****************
 
 .social-popout {
 	height: 48px;
@@ -939,7 +919,7 @@ background: linear-gradient(to left, #44A08D , #093637); 36%,rgba(40,52,59,1) 70
 }
 #google {
 	margin-left: 49px;
-}
+}*/
 .footer_divide3 {
 	width: 20%;
 	display: inline-block;
@@ -1309,7 +1289,7 @@ nav {
 	display: inline-block;
 }
 nav ul.active {
-display: none;
+/*display: none;*/
 }
 nav ul {
 	width: 100%;
@@ -1326,7 +1306,7 @@ nav ul li {
 	text-align: center;
 }
 nav ul li {
-	color: white;
+	color: red;
 }
 nav ul :hover {
 	color: white;
@@ -1491,12 +1471,12 @@ nav ul :hover {
 	border: none;
 	outline: none;
 }*/
-.footer_divide2 {
+/*.footer_divide2 {
 	width: 200px;
 	display: inline-block; margin-left: 20%;
 	margin-bottom: 10px;
 }
-/******************** social icon starts *****************/
+/******************** social icon starts *****************
 
 .social-popout {
 	height: 48px;
@@ -1527,7 +1507,7 @@ nav ul :hover {
 }
 #google {
 	margin-left: 49px;
-}
+}*/
 /******************** social icon Ends *****************/
 .footer_divide3 {
 	width: 200px;
@@ -1746,13 +1726,13 @@ body {
 	color: #ccc;
 }
 
-.footer_divide2 {
+/*.footer_divide2 {
 	width: 50%;
 	display: inline-block;
 	margin-bottom: 10px;
 	margin-left: 75px;
 }
-/******************** social icon starts *****************/
+/******************** social icon starts *****************
 
 .social-popout {
 	height: 48px;
@@ -1783,7 +1763,7 @@ body {
 }
 #google {
 	margin-left: 55px;
-}
+}*/
 /******************** social icon Ends *****************/
 .footer_divide3 {
 	width: 50%;
@@ -1868,6 +1848,10 @@ body {
 .right_inner img {
 	width: 100%;
 }
+	.bgcolor-1{
+		margin-top: -4px;;
+		margin-left:-10px; 	
+	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -1913,12 +1897,12 @@ body {
 	display: block;
 	font-size: 15px;
 }
-.cont_inner1_img {
+/*.cont_inner1_img {
 	width: auto;
 	float: right;
 	margin-top: 20px;
 	display: none;
-}
+}*/
 /*privacy*/
 .privacy_heading {
 	width: 100%;
@@ -1932,7 +1916,7 @@ body {
 	padding: 0px; margin: 0px;
 }
 	.cont_hading_underline img{
-		width: 100%;
+		width: 100%; margin-left:10px;;
 	}
 .logo_container img {
 	width: 160px;
@@ -1946,7 +1930,7 @@ body {
 	}
 .main_banner {
 	
-	 width: 94.10%; margin-top: 35%;
+	 width: 100%; margin-top: 29%;
 }
 nav {
 	float: left;
@@ -1966,14 +1950,14 @@ nav ul {
 nav ul li {
 	margin: 5px 0px 5px 0px;
 	float: none;
-	display: block;
+	display: block; color: red;
 	text-align: center;
 }
 nav ul li a:hover {
 	color: white;
 }
 	nav	ul li:hover{
-background: linear-gradient(to left, #44A08D , #093637);
+background: red;
 	} 
 .a{
 	border-bottom: 4px solid #191919;
@@ -2028,13 +2012,13 @@ background: linear-gradient(to left, #44A08D , #093637);
 	color: #ccc;
 }
 
-.footer_divide2 {
+/*.footer_divide2 {
 	width: 100%;
 	display: inline-block;
 	margin-bottom: 10px;
 	margin: auto;
 }
-/******************** social icon starts *****************/
+/******************** social icon starts *****************
 
 .social-popout {
 	height: 48px;
@@ -2061,17 +2045,19 @@ background: linear-gradient(to left, #44A08D , #093637);
 	box-shadow: 6px 6px 4px 4px rgba(0,0,0,0.3);
 	transform: rotate(360deg);
 }
+	.social{
+	height: 100%; width: auto; margin-left:13px;
+	}
 #google {
 	margin-left:-90px;
 	margin-top: 50px;
-}
+}*/
 /******************** social icon Ends *****************/
 .footer_divide3 {
-	width: 100%;
+	width: 65%;
 	display: inline-block;
 	float: right;
-	margin-bottom: 10px; 
-	margin: auto;
+	margin-bottom: 10px; margin-left: 30px; 
 } 
 .our_servic-box {
 	width: 250px;
@@ -2112,8 +2098,6 @@ background: linear-gradient(to left, #44A08D , #093637);
 	position: absolute; 
 }
 
-	
-	
 	.carousel{
 		width: 100%;
 		height: auto;
