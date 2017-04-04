@@ -45,7 +45,7 @@ $(document).ready(function () {
 	});
 
 
-	$(".select_currency").on("change", function(){
+	/*$(".select_currency").on("change", function(){
 		var selectedVal = $(this).val();
 		$("#CurrencyCode").val(selectedVal);
 	});
@@ -74,7 +74,7 @@ $(document).ready(function () {
 		$("#HashValue").val(SHA256(str));
 		$("#paymentDataForm").submit();
 
-	});
+	});*/
 });
 
 $(document).ready(function () {
@@ -88,10 +88,10 @@ $(document).ready(function () {
 
 
 
-	$('#web_des').css('background-color', '#191919');
+	$('#web_des').css('background-color', 'red');
 	$('.left_nav ul li').bind('click', function () {
 		$('.left_nav ul li').css('background-color', 'Gray')
-		$(this).css('background-color', '#191919');
+		$(this).css('background-color', 'red');
 
 	});
 
